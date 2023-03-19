@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Where is the ISS?</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+        crossorigin=""/>
+
+        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+        crossorigin=""></script>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script async defer src="fetch.js"></script>
+    </head>
+
+    <body>
+
+        <h1>Where is the ISS?</h1>
+
+        <div>
+            <p id="time"></p>
+            <p>ISS Latitude: <span id="iss-lat"></span></p>
+            <p>ISS Longitude: <span id="iss-long"></span></p>
+        </div>
+
+        <div id="iss-map"></div>
+
+        <p>Icon by Space by Made by Made from <a href="https://thenounproject.com/browse/icons/term/space/" target="_blank" title="Space Icons">Noun Project</a></p>
+    </body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time Interval</title>
+    </head>
+    <body>
+
+        <h1>What time is it?</h1>
+        <p id ="time"></p>
+
+        <script>
+
+            let timeElement = document.querySelector('#time')
+            
+            setInterval( function() {
+                let date = Date() //built in - sets time to right now
+                timeElement.innerHTML = date
+            }, 1000) //will update the time displayed every second
+
+            //alternative with arrow method
+            //even if no arguments make sure to include empty paraenthesis
+
+            setInterval( () => {
+                let date = Date() //built in - sets time to right now
+                timeElement.innerHTML = date
+            }, 1000) //will update the time displayed every second
+
+
+        </script>
+
+    </body>
+
+</html>
